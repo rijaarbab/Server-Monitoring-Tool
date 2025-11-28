@@ -123,59 +123,59 @@ The outcomes were observed after implementing and running the system monitoring 
 
 ### Main Menu
 
-![Main Menu](Main%20Menu.png)
+![Main Menu](Results/Main%20Menu.png)
 
 When the `python3 main.py` is run in the terminal, the monitor board launches without any errors. The program opened with a menu where I could choose what to run. Main Menu shows the four main options: live dashboard, CPU stress test, alert history, and exit. It asks the user for their input to select an option.
 
 ### Live Dashboard
 
-![Live Dashboard](Live%20Dashboard.png)
+![Live Dashboard](Results/Live%20Dashboard.png)
 
 With the selection of option one, the Live Dashboard gets displayed. Once monitoring began, the dashboard provided continuous updates every two seconds. The dashboard consistently displays the system's information such as Host, OS, CPU Cores, Ram, and System uptime. The server monitoring Dashboards displays the Metrics for CPU, Memory and Disk Usage with their values and status. It also shows the available memory, free Disk Space, and Network activity. The status and values are displayed in color based on the threshold. At the top it shows the Alert count which gets sent to email and slack every five minutes when a metrics reaches the warring or critical. The User can then press Ctrl+C to stop the server monitoring at any time.
 
 ### Email Alert
 
-![Email Alert](Email%20Alerts.png)
+![Email Alert](Results/Email%20Alerts.png)
 
 The email notification feature worked correctly. The image shows memory alerts were sent including the time stamp plus the Server and OS information.
 
 ### Slack Alert
 
-![Slack Alert](Slack%20Alert.png)
+![Slack Alert](Results/Slack%20Alert.png)
 
 Slack alerts were also delivered exactly as expected showing warning memory alerts, time stamps, plus the Server and OS information.
 
 ### CPU Stress Test
 
-![CPU Stress Test](CPU%20Stress%20Test.png)
+![CPU Stress Test](Results/CPU%20Stress%20Test.png)
 
 The CPU test ran successfully after selecting option two from the Main Menu. The CPU jumped to 100%, and the dashboard marked it as Critical in red. This showed that the dashboard recognized sudden spikes in real time when the CPU is under stress and sent alerts via email and slack.
 
 ### CPU Stress Test Successful
 
-![CPU Stress Test Successful](CPU%20Stress%20Test%20Successful.png)
+![CPU Stress Test Successful](Results/CPU%20Stress%20Test%20Successful.png)
 
 When the monitoring session was stopped, the summary showed that alerts were reported which matched what I observed during the test.
 
 ### Email Alert with CPU Stress Test
 
-![Email Alert with CPU Stress Test](Email%20Alert%20with%20CPU%20Stress%20Test.png)
+![Email Alert with CPU Stress Test](Results/Email%20Alert%20with%20CPU%20Stress%20Test.png)
 
 ### Slack Alert with CPU stress test
 
-![Slack Alert with CPU stress test](Slack%20Alert%20with%20CPU%20stress%20test.png)
+![Slack Alert with CPU stress test](Results/Slack%20Alert%20with%20CPU%20stress%20test.png)
 
 With the CPU Stress test the alerts were sent successfully on email and slack.
 
 ### Alert History
 
-![Alert History](Alert%20History.png)
+![Alert History](Results/Alert%20History.png)
 
 Option 3 from Main Menu displayed the alerts history in the terminal successfully.
 
 ### Alert History Log
 
-![Alert History Log](Alert%20History%20Log.png)
+![Alert History Log](Results/Alert%20History%20Log.png)
 
 The tool saved every alert to alert_history.log exactly as designed.
 
