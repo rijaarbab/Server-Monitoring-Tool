@@ -1,0 +1,34 @@
+# Alert Thresholds
+thresholds:
+  cpu:
+    warning: 10
+    critical: 90
+  
+  memory:
+    warning: 10
+    critical: 90
+  
+  disk:
+    warning: 80
+    critical: 95
+
+# Alert Settings
+alert_settings:
+  min_alert_interval_minutes: 5
+
+# Notifications
+notifications:
+  email:
+    enabled: true
+    smtp_server: "smtp.gmail.com"
+    smtp_port: 587
+    sender_email: "sender-email@gmail.com"
+    sender_password: "google-app-password"
+    recipient_emails:
+      - "recipient-email@gmail.com"
+  
+  slack:
+    enabled: true
+    webhook_url: "slack webhook URL"
+    channel: "#system-alerts"
+    username: "Server Monitor Bot"
